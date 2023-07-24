@@ -1,0 +1,24 @@
+{
+    "dependencies": {},
+    "name": "example",
+    "productName": "exampleProduct",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "pack": "electron-builder --dir --win portable"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "electron": "^16.0.5"
+    },
+    "build": {
+        "appId": "com.user.exampleID",
+        "win": {
+            "target": "nsis",
+            "icon": "favicon.ico"
+        }
+    }
+}
